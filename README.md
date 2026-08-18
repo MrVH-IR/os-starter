@@ -44,7 +44,7 @@ docker compose -f docker/mysql_php-myadmin.yml up -d
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/MrVH-IR/os-starter.git
 cd MyConf
 ```
 
