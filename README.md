@@ -45,7 +45,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/MrVH-IR/os-starter.git
-cd MyConf
+cd os-starter
 ```
 
 Make scripts executable:
