@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  apache:
+    image: httpd:latest
+    container_name: apache_server
+    restart: unless-stopped
+    ports:
+      - "8088:80"
+    volumes:
+      - ./apache_html:/usr/local/apache2/htdocs/
+      - ./apache_config:/usr/local/apache2/conf/
+      - ./apache_logs:/usr/local/apache2/logs/
+    networks:
+      - web_network
+
+volumes:
+  apache_html:
+  apache_config:
+  apache_logs:
+
+networks:
+  web_network:
+    driver: bridge
